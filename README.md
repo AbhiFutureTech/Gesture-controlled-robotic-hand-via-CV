@@ -1,7 +1,7 @@
 
 Description
 We made 2 key modifications to the original version:
-![Uploading image.png…]()
+
 
 Hand gesture recognition
 
