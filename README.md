@@ -1,24 +1,43 @@
+# Robotics Hand Control Through Computer Vision
 
-Description
-We made 2 key modifications to the original version:
+This project goal is to create a controlled robotics hand that responds to hand movements. Utilizing an Arduino Uno as the microcontroller, the system translates real-time hand gestures into commands for the robotic hand. I used computer vision technologies, such as mediapipe and opencv to enhances the recognition and interpretation of hand movements.
+## Demo
+
+https://github.com/jaymzmnrd/gesture-controlled-robotic-hand/assets/138496409/f49d09a7-8547-4a05-845c-a9ba6e11576d
 
 
-Hand gesture recognition
 
 
-We added the hand_tracking_cpu_main to make the system recognize hand gestures in real-time. To make this work, we employed hand gesture recognition calculators and made changes to the original .pbtxt graphs (see the latest commits).
+## Hardware Specifications
 
-Currently there are 2 versions of hand gesture calculcator:
+ - Arduino Uno
+ - MG90S Servo
+ - BAttery 9v
+ - Voltage Regulator 6v
+ - Breadboard
+ - Jumper Wires
+ - Robotic Hand
 
-HandGestureCalculator: rule-based hand gesture recognition. Inspired by the code from the TheJLifeX repo.
+ ## Software Specifications
 
-HandGestureCalculatorNN: neural network-based gesture recognition.
+ - Arduino
+ - Visual Studio Code
+ - Fritzing
+ 
 
-By default, HandGestureCalculator is used. Feel free to modify the hand_landmark_cpu.pbtxt graph to change the gesture calculator.
 
-We used Jesture AI SDK (python/annotation.py) to collect the data for neural network training.
 
-ZeroMQ message passing
-ZeroMQ is a tool for message passing between different processes. It allows to communicate between e.g. a binary file compiled from C++ and a python script. In our code, we use the hand_tracking_cpu_main as a Requester and the zmq_server_demo.py as a Replier (see REQ-REP strategy).
+## You need to install this libraries
 
-To make all these things work we used the cppzmq header files (see examples/desktop/hand_tracking dir).
+```bash
+  pip install opencv-python
+```
+```bash
+  pip install mediapipe
+```
+```bash
+  pip install numpy
+```
+```bash
+  pip install matplotlib
+```
