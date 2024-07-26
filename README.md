@@ -1,11 +1,6 @@
 # Robotics Hand Control Through Computer Vision
 
 This project goal is to create a controlled robotics hand that responds to hand movements. Utilizing an Arduino Uno as the microcontroller, the system translates real-time hand gestures into commands for the robotic hand. I used computer vision technologies, such as mediapipe and opencv to enhances the recognition and interpretation of hand movements.
-## Demo
-
-https://github.com/jaymzmnrd/gesture-controlled-robotic-hand/assets/138496409/f49d09a7-8547-4a05-845c-a9ba6e11576d
-
-
 
 
 ## Hardware Specifications
